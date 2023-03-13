@@ -76,7 +76,8 @@ def get_json_data(end_date=None, num_days=None, url = URL):
 
 def analyze_health_data(df):
 
-    # convert columns to appropriate data types
+    # drop bad rows and onvert columns to appropriate data types
+    df = df.dropna(subset=['date', 'state', 'overall_outcome','total_results_reported', 'new_results_reported']) 
     df['date'] = pd.to_datetime(df['date'])
     df['new_results_reported'] = df['new_results_reported'].astype('int')
     df['total_results_reported'] = df['total_results_reported'].astype('int')
