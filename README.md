@@ -102,6 +102,13 @@ cd chalicelib/processor.py
 python processor.py 
 
 ```
+### Some observations
+
+##### 7 day rolling mean suggests sustained downward trend in new results reported.
+
+![alt text](https://raw.githubusercontent.com/indyavik/covid-19-analysis/d9334d3f807b4130c7b67ce98ccb5c98b1ef75f9/img-trend.png)
+
+##### State positivity rate is generally constant within range of 15 - 20% except IA. More investigation is needed to see whether it's a reporting (data ) issue or really high positivity rate. 
 
 ### To do: 
 
